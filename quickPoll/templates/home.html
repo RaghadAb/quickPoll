@@ -1,12 +1,9 @@
-{% load staticfiles %}
-<!DOCTYPE html>
-<html>
-<head>
-    <title> Raghad
-    </title>
-    <link rel="icon" href="logo.png">
-</head>
-<body>
-<p>Hi,this is my life</p>
-</body>
-</html>
+
+{% extends 'base.html' %}
+
+
+    {% block content %}
+
+
+    {% endblock %}
+ <!-- when you extend a template , everything outside the block is completeley ignored , if you call h1 in both the templates, h1 in the templates which extends only appears {{block.super}}  -->
