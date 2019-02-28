@@ -9,6 +9,15 @@ class Poll(models.Model):#define fields and behaviors
     def __str__(self):
         return self.text
 
+
+    def uservotes(self):
+        #returns true if the user has already voted
+
+        user_votes=votes.setall()
+
+
+
+
 #points to object, views the object
 
 
