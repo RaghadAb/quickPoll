@@ -1,8 +1,14 @@
 from django.shortcuts import render
+from .models import Poll
 
 
 # Create your views here.
 
 def search(request):
-    return render(request,'polls/search.html')
+
+    polls= Poll.objects.all()
+    context={'polls':polls}
+    return render(request,'polls/search.html',context)
+
+
 

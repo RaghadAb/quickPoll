@@ -1,11 +1,20 @@
-{% load staticfiles %}
-<!DOCTYPE html>
-<html>
-<head>
-    <title> These are the polls we found...</title>
+{% extends 'base.html' % }
 
-</head>
-<body>
-<p></p>
-</body>
-</html>
+{% load staticfiles %}
+
+{% block content %}
+<div class= "container">
+
+<h1> these are the polls we found...</h1>
+<ol>
+{% for poll in polls %}
+    <li>{{ poll  }}</li>
+
+</ol>
+</div>
+
+{% endfor %}
+
+
+
+

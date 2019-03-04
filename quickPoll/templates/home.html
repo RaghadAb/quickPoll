@@ -2,6 +2,10 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 
+{% block newcss %}
+<link rel="stylesheet" href="{% static 'css/homePage.css' %} ">
+{% endblock %}
+
     {% block content %}
 
 
@@ -44,9 +48,9 @@
 
     <h1>quickPoll.</h1>
     <p class="lead">REAL TIME POLLS & QUIZZES</p>
-    <a class="btn btn-info btn-primary" href="/docs/4.3/components/navbar/" role="button">Start Now! &raquo;</a>
+    <a class="btn btn-info btn-primary" href='quickPoll/createPoll' role="button">Start Now! &raquo;</a>
   </div>
-
+<!-- href="/docs/4.3/components/navbar/"-->
   <div class="container">
     <div class="row">
         <div class="col">
@@ -62,6 +66,61 @@
 
   </div>
 
+   <div class="row">
+          <div class="col-lg-4">
+
+
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+
+
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+
+
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">What is quickpoll about?</span></h2>
+            <p class="lead">Get real time feedback and answers in order to improve your products and services!
+            You can get anyone's opinion from anywhere, it doesn't get any better.</p>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Contact us.</h2>
+            <p class="lead">
+              Do you have any questions? don't hesitate to email us on
+              www.quickPoll@gmail.com
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto">
+          </div>
+        </div>
+
+         <hr class="featurette-divider">
+         <!-- /END THE FEATURETTES -->
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2019-2020 Company, Inc. &middot;</p>
+      </footer>
+    </main>
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -75,3 +134,6 @@
 
     {% endblock %}
  <!-- when you extend a template , everything outside the block is completeley ignored , if you call h1 in both the templates, h1 in the templates which extends only appears {{block.super}}  -->
+
+
+<!-- home page design, -->

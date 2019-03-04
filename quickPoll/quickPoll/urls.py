@@ -19,8 +19,10 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('time/', views.current_datetime),
-    path('home/', views.home),
-    path('quickPoll/', include('polls.urls'))
+    path('', views.home, name='home'), #empty path, so that it's the first thing the user sees
+    path('quickPoll/', include('polls.urls', namespace='quickPoll'))
 
 ]
+
+
+
