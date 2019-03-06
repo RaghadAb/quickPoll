@@ -8,7 +8,7 @@ class Poll(models.Model):#define fields and behaviors
 
 
     def __str__(self):
-        return self.text
+        return str(self.text)
 
 
 

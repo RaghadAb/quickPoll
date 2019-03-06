@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import Poll
 
 
+
 # Create your views here.
 
 def search(request):
