@@ -1,0 +1,33 @@
+
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class= "container">
+
+<h1> These are the polls we found...</h1>
+<ol>
+{% for poll in polls %}
+     <li><a href="{% url 'quickPoll:option' poll.id %}">{{ poll  }}</a></li>
+
+
+{% endfor %}
+</ol>
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+<!-- you dont want to view the options, view the options when clicked on a specific poll  <ol>
+ another ordered list, to view underneath each poll
+        {% for option in poll.options_set.all %}  nested for loop, so it relates to the previous for loop
+        <li>{{ option.option }}</li>
+        {% endfor %}
+
+    </ol> -->
+
+
