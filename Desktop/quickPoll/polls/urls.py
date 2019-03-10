@@ -9,6 +9,8 @@ urlpatterns = [
 
      url(r'^option/(?P<quiPoll_id>\d+)/', views.option_Number,name='option'),
      url(r'^option/(?P<quiPoll_id>\d+)/vote/', views.vote, name='vote'),
+     #url(r'^register/$', views.register, name='register')
+
 ]
 
 
